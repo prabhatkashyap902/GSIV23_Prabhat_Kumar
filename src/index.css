@@ -1,13 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont,'Montserrat', sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+		
+}
+
+@media only screen and (max-width: 512px) {           /*Mobile*/
+	.DisplayPageTitleCss{
+		font-size: 14px;
+	}
+	.inputBar{
+		width: 250px;
+	}
+	.ListCardCSS{
+		font-size: 16px;
+	}
+	.SuggestionShowCSS{
+		width: 250px;
+	}
+	.listItemSuggestionCSS{
+		font-size: 14px;
+	}
+}
+@media only screen and (min-width : 512px) and (max-width : 1024px){   /*IPad*/
+	.inputBar{
+		width: 300px;
+	}
+	.ListCardCSS{
+		max-width: 200px !important;
+	}
+	.SuggestionShowCSS{
+		width: 300px;
+	}
+}
+@media only screen and (min-width : 1024px) {    /*Laptop*/
+	.inputBar{
+		width: 600px;
+	}
+	.ListCardCSS{
+		max-width: 200px;
+	}
+	.SuggestionShowCSS{
+		width: 600px;
+	}
 }
