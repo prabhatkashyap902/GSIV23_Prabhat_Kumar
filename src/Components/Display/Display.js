@@ -45,7 +45,7 @@ const Display = () => {
 		<DisplayHeader data={data?.original_title}/>
 		<div className='ml-10 mt-5 flex '>
 			<div>
-				<img src={IMAGE_BASE_URL+data?.backdrop_path} alt={data?.original_title+"_img"} className='h-[400px] w-[400px] min-w-[190px]'/>
+				<img src={IMAGE_BASE_URL+data?.backdrop_path} alt={data?.original_title+"_img"} className='h-[400px] max-w-[400px] min-w-[190px]'/>
 			</div>
 			<div className='ml-3'>
 				<h1 className='font-bold text-3xl'>{data?.original_title} <span className='font-light'>({data?.vote_average})</span></h1>
