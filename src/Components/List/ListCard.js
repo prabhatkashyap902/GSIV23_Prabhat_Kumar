@@ -4,7 +4,7 @@ import { IMAGE_BASE_URL } from '../../Utils'
 const ListCard = (props) => {
 	// console.log(props)
 	return (
-		<div className="ListCardCSS  cursor-pointer  rounded-xl overflow-hidden shadow-2xl m-3 text-xs">
+		<div className="ListCardCSS  rounded-xl overflow-hidden shadow-2xl text-xs">
 			
 			<img alt="poster_image" src={IMAGE_BASE_URL+ props.data?.backdrop_path} className='w-full'/>
 			

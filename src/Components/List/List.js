@@ -141,10 +141,10 @@ const handleSuggestionItemClick=(id,title)=>{
 				
 			</Link>
 		</div>
-		<div className='flex flex-wrap px-7'>
+		<div className='flex flex-wrap mx-7'>
 			{	listMovie.length===0?
 				 Array(20).fill("2").map((item)=><img src={Shimmer} alt="" className='h-[400px] w-52 m-3'/>):
-				listMovie?.map((item,index)=><Link to={"/"+item.id} state={{from:item}}><ListCard data={item} key={index}/></Link>)
+				listMovie?.map((item,index)=><Link to={"/"+item.id} state={{from:item}} className='m-3'><ListCard data={item} key={index}/></Link>)
 			}
 		</div>
 		<div className='flex justify-between m-3'>
