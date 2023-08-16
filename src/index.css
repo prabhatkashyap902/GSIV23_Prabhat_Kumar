@@ -22,6 +22,15 @@ code {
 	.DisplayPageTitleCss{
 		font-size: 14px;
 	}
+	.DisplayImageCSS{
+	}
+	.DisplayContainerCSS{
+
+	}
+	.DisplayTextCSS{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 	.inputBar{
 		width: 250px;
 	}
@@ -45,6 +54,11 @@ code {
 	.SuggestionShowCSS{
 		width: 300px;
 	}
+	.DisplayImageCSS{
+	}
+	.DisplayTextCSS{
+		margin-top: 30px;
+	}
 }
 @media only screen and (min-width : 1024px) {    /*Laptop*/
 	.inputBar{
@@ -55,5 +69,14 @@ code {
 	}
 	.SuggestionShowCSS{
 		width: 600px;
+	}
+	.DisplayImageCSS{
+		min-width: 300px;
+	}
+	.DisplayContainerCSS{
+		display: flex;
+	}
+	.DisplayTextCSS{
+		margin-left: 30px !important;
 	}
 }

@@ -43,11 +43,11 @@ const Display = () => {
 	<div className=' drop-shadow-lg'>
 		
 		<DisplayHeader data={data?.original_title}/>
-		<div className='ml-10 mt-5 flex '>
-			<div>
-				<img src={IMAGE_BASE_URL+data?.backdrop_path} alt={data?.original_title+"_img"} className='h-[400px] max-w-[400px] min-w-[190px]'/>
+		<div className='DisplayContainerCSS  ml-10 mt-5  '>
+			<div className=''>
+				<img src={IMAGE_BASE_URL+data?.backdrop_path} alt={data?.original_title+"_img"} className='DisplayImageCSS h-[400px]  '/>
 			</div>
-			<div className='ml-3'>
+			<div className='DisplayTextCSS'>
 				<h1 className='font-bold text-3xl'>{data?.original_title} <span className='font-light'>({data?.vote_average})</span></h1>
 				<h2 className='my-2'>{data?.release_date?.split('-')[0]} | Length | Director</h2>
 				<h2 className='my-2'>Cast: Actor1, Actor2, ...</h2>
